@@ -7,6 +7,7 @@
 
 ## Блок схема алгоритма
 Находится в файле `block-diagram.png` в репозитории
+https://github.com/ekatylynx/one-dimensional-array-python/blob/master/test-case-1.png
 
 ## Ветви алгоритма:
 У нас есть 2 ветки в алгоритме:
