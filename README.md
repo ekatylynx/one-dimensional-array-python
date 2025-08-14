@@ -7,7 +7,8 @@
 
 ## Блок схема алгоритма
 Находится в файле `block-diagram.png` в репозитории
-https://github.com/ekatylynx/one-dimensional-array-python/blob/master/test-case-1.png
+![Изображение блок схемы алгоритма](https://github.com/ekatylynx/one-dimensional-array-python/blob/master/block-diagram.png)
+
 
 ## Ветви алгоритма:
 У нас есть 2 ветки в алгоритме:
@@ -31,7 +32,7 @@ https://github.com/ekatylynx/one-dimensional-array-python/blob/master/test-case-
 
 ## Таблица тестовых примеров
 
-| № теста | N | Массив `A`           | sumPos (ожид.) | countPos (ожид.) | Какие ветви охватывает     |
+| № теста | N | Массив `A`           | sumNums        | countNum         | Какие ветви охватывает     |
 | ------- | - | -------------------- | -------------- | ---------------- | -------------------------- |
 | 1       | 4 | `[1, 2, 3, 4]`       | 10             | 4                | Всегда `A[i] > 0` → Да     |
 | 2       | 4 | `[-1, -2, -3, -4]`   | 0              | 0                | Всегда `A[i] > 0` → Нет    |
@@ -39,3 +40,76 @@ https://github.com/ekatylynx/one-dimensional-array-python/blob/master/test-case-
 | 4       | 5 | `[-1, 5, -3, 2, -1]` | 7              | 2                | Смешанные: Да и Нет        |
 | 5       | 5 | `[0, 5, -3, 2, -1]`  | 7              | 2                | Смешанные: Да, Нет, и нули |
 | 6       | 0 | `[]`                 | 0              | 0                | `i < N` → Нет сразу        |
+
+
+## Разбор тестовых примеров
+### Тестовый пример 1 
+Массив A - [1, 2, 3, 4]
+
+sumNums = 10
+
+countNum = 4
+
+Какие ветви охватывает: Всегда `A[i] > 0` → Да
+
+![Изображение результата тестового примера](https://github.com/ekatylynx/one-dimensional-array-python/blob/master/test-case-1.png)
+
+
+### Тестовый пример 2
+Массив A - [-1, -2, -3, -4]
+
+sumNums = 0
+
+countNum = 0
+
+Какие ветви охватывает: Всегда `A[i] > 0` → Нет
+
+![Изображение результата тестового примера](https://github.com/ekatylynx/one-dimensional-array-python/blob/master/test-case-2.png)
+
+
+### Тестовый пример 3
+Массив A - [0, 0, 0, 0]
+
+sumNums = 0
+
+countNum = 0
+
+Какие ветви охватывает: Всегда `A[i] > 0` → Нет (но все числа нули)
+
+![Изображение результата тестового примера](https://github.com/ekatylynx/one-dimensional-array-python/blob/master/test-case-3.png)
+
+
+### Тестовый пример 4
+Массив A - [-1, 5, -3, 2, -1]
+
+sumNums = 7
+
+countNum = 2
+
+Какие ветви охватывает: Смешанные: Да и Нет (чередование Да/Нет в одном запуске.)
+
+![Изображение результата тестового примера](https://github.com/ekatylynx/one-dimensional-array-python/blob/master/test-case-4.png)
+
+
+### Тестовый пример 5
+Массив A - [0, 5, -3, 2, -1]
+
+sumNums = 7
+
+countNum = 2
+
+Какие ветви охватывает: Смешанные: Да и Нет (чередование Да/Нет в одном запуске. + нули)
+
+![Изображение результата тестового примера](https://github.com/ekatylynx/one-dimensional-array-python/blob/master/test-case-5.png)
+
+
+### Тестовый пример 6
+Массив A - []
+
+sumNums = 0
+
+countNum = 0
+
+Какие ветви охватывает: `i < N` → Нет сразу
+
+![Изображение результата тестового примера](https://github.com/ekatylynx/one-dimensional-array-python/blob/master/test-case-6.png)
