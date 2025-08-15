@@ -9,7 +9,7 @@
 Находится в файле `block-diagram.png` в репозитории
 ![Изображение блок схемы алгоритма](https://github.com/ekatylynx/one-dimensional-array-python/blob/master/block-diagram.png)
 
-Ссылка на песочницу для запуска программы на Python: ![Ссылка на Online Python](https://www.online-python.com/PTjSqKFBg8)
+Ссылка на песочницу для запуска программы на Python: [Ссылка на Online Python](https://www.online-python.com/PTjSqKFBg8)
 
 
 ## Ветви алгоритма:
